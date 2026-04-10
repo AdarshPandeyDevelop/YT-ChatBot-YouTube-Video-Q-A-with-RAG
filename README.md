@@ -16,16 +16,27 @@ No hallucinations about the video. No answers from general knowledge. If it's no
 
 ✨ Features
 FeatureDetails
+
 🔗 Universal URL Supportyoutube.com/watch, youtu.be, /shorts/, /embed/, plain video IDs
+
 🧠 RAG PipelineRetrieval-Augmented Generation using FAISS + all-MiniLM-L6-v2 embeddings
+
 💬 Conversational MemoryLast 3 exchanges (6 messages) injected into every prompt for coherent follow-ups
+
 🌍 Multilingual TranscriptsDetects transcript language; prefers manually-created over auto-generated
+
 🗣️ Language-Aware ResponsesResponds in the language the user writes in, regardless of transcript language
+
 ⚡ Fast InferenceGroq's free-tier API runs LLaMA 3.3 70B with extremely low latency
+
 🖼️ Thumbnail PreviewSidebar shows the video thumbnail after indexing
+
 📊 Index MetadataDisplays chunk count, embedding model, LLM name, and message count
+
 📱 Mobile-FriendlyInline URL loader on the main page — no sidebar required on mobile
+
 ♻️ Smart Caching@st.cache_resource prevents re-indexing the same video on page reruns
+
 🎨 Custom Dark UICinematic dark theme with custom fonts (Syne + DM Sans), no default Streamlit look
 
 🏗️ Architecture
@@ -171,18 +182,25 @@ Context window limit: Very long videos produce many chunks; the retriever still 
 
 
 🙋 FAQ
+
 Q: Do I need a paid API key?
 A: No. Groq offers a generous free tier that is sufficient for personal use and demos.
+
 Q: Does it work with non-English videos?
 A: Yes. The app detects the transcript language and instructs the LLM to respond in whatever language the user writes in.
+
 Q: Why FAISS instead of a cloud vector DB?
 A: FAISS runs entirely in-memory with zero setup, no additional API keys, and no cost. It's the right choice for a single-video, single-session use case.
+
 Q: Why Groq instead of OpenAI?
 A: Groq's free tier provides extremely fast LLaMA 3.3 70B inference — comparable quality to GPT-4 class models at no cost, which makes this project fully free to run.
 
 👤 Author
-Adarsh
+Adarsh Pandey
 BCA Student | ML/AI Developer
 
 📄 License
 This project is licensed under the MIT License — see the LICENSE file for details.
+
+![WhatsApp Image 2026-04-10 at 6 52 29 PM](https://github.com/user-attachments/assets/93ffe3c1-b075-4242-af27-96473ef3f2ed)
+![WhatsApp Image 2026-04-10 at 6 56 02 PM](https://github.com/user-attachments/assets/5ff0d555-5b29-4b75-9567-39aee46d991b)
